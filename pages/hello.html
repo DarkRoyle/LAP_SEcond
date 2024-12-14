@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaP - Вітання</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: url('../assets/space-bg.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-section img {
+    max-width: 70%;
+    height: auto;
+    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.7));
+        }
+
+        .image-section img {
+            max-width: 70%;
+            height: auto;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .text-section {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7); /* Напівпрозорий чорний фон */
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-section h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #FFD700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        }
+
+        .text-section p {
+            font-size: 20px;
+            color: #DDDDDD;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #6A5ACD;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 10px rgba(106, 90, 205, 0.5);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #5a4bbd;
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #00BFFF;
+            border: 1px solid #00BFFF;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(0, 191, 255, 0.2);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Ліва частина: Зображення -->
+        <div class="image-section">
+            <img src="../assets/character.png" alt="Персонаж">
+        </div>
+        <!-- Права частина: Текст і кнопки -->
+        <div class="text-section">
+            <h1>Подорожуй до зірок із LaP!</h1>
+            <p>Досліджуй галактики, розвивай знання та вчися граючись із віртуальними друзями в нашому космічному світі.</p>
+            <a href="registration.html" class="btn btn-primary">Розпочати</a>
+            <a href="login.html" class="btn btn-secondary">Уже маю обліковий запис</a>
+        </div>
+    </div>
+</body>
+</html>
