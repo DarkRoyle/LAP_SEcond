@@ -1,0 +1,842 @@
+  .background_main_background {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100vh;
+    background-image: url("bec.png");
+    background-size: cover;
+    background-position: absolute;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section:nth-child(2) {
+  }
+  a,
+  button,
+  input,
+  select,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background: none;
+
+    -webkit-font-smoothing: antialiased;
+  }
+
+  menu,
+  ol,
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sectionMain {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+      gap: 20px; 
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 30px;
+  }
+
+  .section2 , .section3, .section4, .section5, .section6{
+    background: #ffffff;
+    border-radius: 20px;
+    width: 196px;
+    height: 35px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+  .section6{
+    grid-column-end: 5;
+  }
+  .grid-centered{
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr;
+    height: 100vh;
+  }
+  .Star_image{
+    width: 125px;
+    height: 100px;
+    margin-left: -20px;
+  }
+  .Crystal_image{
+    margin-left: -20px;
+    width: 70px;
+    height: 75px;
+  }
+  .Energy_image{
+    width:150px;
+    height: 120px;
+    margin-left: -40px;
+  }
+  .Heart_image{
+    margin-left: -20px;
+    width: 95px;
+    height: 80px;
+  }
+  .Emoji_image{
+    margin-left: -20px;
+    width: 95px;
+    height: 80px;
+  }
+  .Planets{
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 20px;
+  }
+  .Planet1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+  }
+  .Planet2{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+  }
+  Planet3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+  }
+  .Planet4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  .Planet1_image{
+    width: 345x;
+    height: 202px;
+    position: absolute;    
+  }
+  .Planet2_image{
+    width: 219px;
+    height: 125px;
+  }
+  .Planet3_image{
+    width: 192px;
+    height: 152px;
+  }
+  .Planet4_image{
+    width: 269px;                           /* Ширина картинки в сітці */
+    height: 155px;
+    top:500px;
+    left: 1000px;
+    position: absolute;      
+  }
+  .Animal{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .Animal_image{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 600px;
+  top: 480px;
+  }
+  .Animal_image1{
+    width: 300px;
+  height: 300px;
+  }
+  .Planet11_image{
+    width: 345x;
+    height: 202px;
+  }
+  .Planet21_image{
+    width: 219px;
+    height: 125px;
+  }
+  .Planet41_image{
+    width: 269px;
+    height: 155px;
+  }
+  .section1{
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr;
+    height: 100vh;
+  }
+  .button-new{
+    width: 125;
+    height: 100px;
+  }
+  .menu-open{
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    z-index: 1;
+    border-radius: 40px;
+    opacity: 0.8;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+  }
+  .button-old{
+    width: 125;
+    height: 100px;
+    position: right;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .buttonsMANY{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows:  50px 50px 50px;
+    gap: 70px;
+  }
+  .Profile{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .Shop{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  .Help{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+  }
+  .Help_1 , .Shop_1 , .Profile_1{
+  left: 50px;
+  width: 220px;
+  height: 70px;
+  }
+  .Shop_1{
+    height: 67px;
+  }
+  .Help_1 {
+  height: 50px ;
+
+  }
+  .menu-open_page3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    border-radius: 40px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+  }
+  .grid-centered_page3{
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr;
+    height: 100vh;
+  }
+  .container_page3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    background-image: url("Background_page3.png");
+    background-size: cover;
+    background-position: absolute;
+    gap: 20px;
+  }
+  .settings{
+    width: auto;
+  }
+  .Settings_Photo{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    overflow: visible;
+    float: right;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    top: 13px
+  }
+  .SettingsDiv{
+    width: 80px;
+    height: 80px;
+  }
+
+
+
+
+
+
+
+
+
+  .container123 {
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+  }
+
+
+  .form789 {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .input101 {
+    width: 100%;
+    height: 47px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+  }
+  .Class , .Age{
+    width: 160px;
+  }
+  .row202 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .label{
+    font-size: 22px ;
+    color: white;
+    padding-right: 110px;
+    font-weight: bold ;
+  }
+  .button303 {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #d06eff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .Achivements:hover {
+    background: #a54fd8;
+  }
+  .HelpX:hover {
+    background: #a54fd8;
+  }
+  .edit-button404 {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .edit-button404:hover {
+    background: #fff;
+    color: #000;
+  }
+  .form789 {
+  width: 373px;
+  height: 320px;
+  left: 1000 px;
+  }
+  .buttonsX{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 38px 80px;
+    padding-top: 40px;
+  }
+  .button3031 {
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 196px;
+    height: 54px;
+  }
+  .button3030{
+    font-size: 25px;
+    color:aliceblue;
+    font-weight: bold; /* Жирний текст */
+    background-color: #d06eff;
+    border-radius: 2px;
+    width: 260px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease; /* Плавний перехід для ефектів */
+    cursor: pointer; /* Курсор при наведенні */
+  }
+  .button3031{
+    font-size: 20px;
+    color:aliceblue;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px; /* Закруглення рамки */
+    border-width: 2px; /* Товщина рамки */
+    border-style: solid; /* Стиль рамки */
+    border-color: #d06eff; /* Колір рамки */
+    background-color: transparent; /* Прозорий фон */
+    color: #fff; /* Колір тексту */
+    font-size: 20px; /* Розмір тексту */
+    font-weight: bold; /* Жирний текст */
+    cursor: pointer; /* Курсор при наведенні */
+    transition: all 0.3s ease; /* Плавний перехід для ефектів */
+    width: 196px; /* Ширина кнопки */
+    height: 54px; /* Висота кнопки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button3031:hover {
+    background-color: #d06eff; /* Фон стає кольоровим */
+    color: #000; /* Текст стає чорним */
+  }
+  .button3030:hover{
+    background-color: #a54fd8; /* Темніший фіолетовий фон */
+    color: #ffffff; /* Білий текст */
+    transform: scale(1.05); /* Легке збільшення кнопки */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Тінь при наведенні */
+  }
+  .Planet_P3{
+    margin-top: 100px;
+    position: absolute;
+  }
+  .Animal_P3{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+  }
+ 
+
+  /* Контейнер меню */
+  .settings-menu01 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 470px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 35px;
+    padding-right: 40px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+/* Заголовок меню */
+.menu-title02 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffc800; /* Жовтий текст */
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Лінія під текстом */
+  padding-bottom: 10px;
+}
+
+/* Контейнер для повзунків */
+.slider-container03 {
+  margin: 20px 0;
+  text-align: left;
+}
+
+/* Мітка для повзунка */
+.slider-label04 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+/* Повзунок */
+.slider05 {
+  width: 100%;
+  height: 6px;
+  background: #ccc; /* Колір треку */
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.slider05::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #ffc800; /* Жовтий колір */
+  border-radius: 50%; /* Круглий повзунок */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+/* Трек повзунка */
+.slider05 {
+  -webkit-appearance: none; /* Для браузерів WebKit */
+  -moz-appearance: none; /* Для Firefox */
+  appearance: none; /* Загальний стиль */
+  width: 100%;
+  height: 6px; /* Висота треку */
+  background: #333; /* Колір фону треку */
+  border-radius: 3px; /* Закруглені краї */
+  outline: none;
+  transition: background 0.3s;
+  position: relative;
+}
+
+/* Заповнена частина треку (для WebKit) */
+.slider05::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #ffc800 0%, #ffc800 var(--progress), #333 var(--progress), #333 100%);
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* Кружок повзунка (для WebKit) */
+.slider05::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ffc800; /* Жовтий колір */
+  border-radius: 50%; /* Круглий повзунок */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Заповнена частина треку (для Firefox) */
+.slider05::-moz-range-progress {
+  background: #ffc800;
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* Незаповнена частина треку (для Firefox) */
+.slider05::-moz-range-track {
+  background: #333;
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* Кружок повзунка (для Firefox) */
+.slider05::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #ffc800; /* Жовтий колір */
+  border-radius: 50%; /* Круглий повзунок */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+/* Зміна кольору треку при зміні значення */
+.slider05:hover {
+  background: #888;
+}
+
+
+.Animal_P3-Setting{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.Moon_P3{
+  z-index: 0;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -190px;
+}
+.astronaut4564 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.settings-menu01{
+  grid-column-end: 6;
+  grid-column-start: 2;
+  margin-right: 300px;
+}
+.container123-Settings{
+  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+
+}
+.container_page_setting{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100vh;
+  background-image: url("Settings_page.png");
+  background-size: cover;
+  background-position: absolute;
+}
+
+
+.Menu_Settings-Support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.support-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 50%; /* Ширина контейнера */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Заголовок */
+.support-container h1 {
+  font-size: 28px;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+/* Текст опису */
+.Texty1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Поле для тексту */
+.textarea-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.textarea-container textarea {
+  width: 100%;
+  height: 150px; /* Збільшено висоту */
+  font-size: 16px;
+  padding: 20px; /* Збільшено внутрішній відступ */
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+}
+
+/* Значок скріпки */
+.scrappy {
+  position: absolute;
+  bottom: 15px; /* Відступ віднизу */
+  left: 15px; /* Відступ зліва */
+  width: 30px; /* Збільшено розмір скріпки */
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  filter: brightness(1);
+}
+
+.scrappy:hover {
+  transform: scale(1.2); /* Ефект збільшення при наведенні */
+}
+
+/* Кнопка */
+.btn {
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px 40px; /* Збільшено відступ */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ефекти для кнопки */
+.btn:hover {
+  background-color: #e0b600;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.container_page_Support{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100vh;
+  background-image: url("Support-Bec.png");
+  background-size: cover;
+  background-position: absolute;
+}
+
+.Support_Button_a{
+  font-size: 25px;
+  color:aliceblue;
+  font-weight: bold; /* Жирний текст */
+  background-color: #d06eff;
+  border-radius: 2px;
+  width: 260px;
+  height: auto;
+}
+.Support_Button_a:hover {
+  background: #a54fd8;
+}
+
+/* Загальний стиль для контейнерів */
+.Planet1_image, .Planet2_image, .Planet4_image, .Animal_image {
+  transition: transform 0.3s ease; /* Плавний перехід */
+}
+
+/* При наведенні на кожен контейнер */
+.Planet1_image:hover,
+.Planet2_image:hover,
+.Planet4_image:hover,
+.Animal_image:hover {
+  transform: scale(1.1); /* Збільшення на 10% */
+}
+
+.Profile, .Shop, .Help {
+  transition: transform 0.3s ease; /* Плавний перехід */
+}
+
+/* При наведенні на кожен контейнер */
+.Profile:hover,
+.Shop:hover,
+.Help:hover {
+  transform: scale(1.1); /* Збільшення контейнера на 10% */
+}
+.buttonsMANY{
+  padding-left: 40px;
+}
+/* Стиль для стрілочки */
+.button-old {
+  transition: transform 0.3s ease; /* Плавний перехід */
+}
+
+/* При наведенні на стрілочку */
+.button-old:hover {
+  transform: scale(1.1); /* Збільшення на 10% */
+}
+/* Загальний стиль для зображень з ефектом збільшення */
+.button-new img,
+.Settings_Photo {
+  transition: transform 0.3s ease; /* Плавний перехід */
+}
+
+/* При наведенні на стрілочку або зображення налаштувань */
+.button-new:hover img,
+.Settings_Photo:hover {
+  transform: scale(1.1); /* Збільшення на 10% */
+}
+.container_Shop{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100vh;
+  background-image: url("Shop_Background.png");
+  background-size: cover;
+  background-position: absolute;
+}
+ .menu-open_1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+ }
+/* Контейнер для елементів */
+.The_Items {
+  display: grid;               /* Встановлюємо Flexbox */
+  justify-content: center;     /* Центруємо по горизонталі */
+  align-items: center;         /* Центруємо по вертикалі */
+  height: 100vh;               /* Встановлюємо висоту контейнера на всю висоту екрану */
+}
+
+/* Додаткові стилі для елементів, щоб забезпечити належне відображення */
+.Potion, .Banana, .ThirdItem {
+  margin: 0 15px; /* Відстань між елементами */
+  display: flex;
+  flex-direction: column;
+}
+
+.Potion1, .Banana1 {
+  max-width: 400px; /* Максимальна ширина зображень */
+  height: auto;     /* Автоматична висота для збереження пропорцій */
+}
+.Banana{
+  margin-left: 100px;
+  margin-top: -800px;
+
+  }
+  .Potion{
+    margin-left: -220px ;
+    margin-top: 190px;
+    
+  }
