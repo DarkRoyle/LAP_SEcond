@@ -1,0 +1,162 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding: 188px 0;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* REGISTER */
+
+.register-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/enter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.exit-img{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 20px;
+    width: 1000px;
+}
+.registration-form {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 200px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 450px;
+    height: 325px;
+    backdrop-filter: blur(7px);
+    background: rgba(52, 51, 51, 0.51);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.register-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fcc101;
+    margin-top: 38px;
+}
+
+.register-input-name,
+.register-input-email,
+.register-input-pass {
+    max-width: 373px;
+}
+
+.registration-form label {
+    display: block;
+    font-weight: bold;
+}
+.register-line{
+    margin-bottom: 27px;
+}
+.register-email,
+.register-password {
+    margin-left: 122px;
+}
+.register-input-email{
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 22px 22px 0 rgba(0, 0, 0, 0.17), 0 50px 30px 0 rgba(0, 0, 0, 0.1), 0 89px 36px 0 rgba(0, 0, 0, 0.03), 0 139px 39px 0 rgba(0, 0, 0, 0);
+    background: #fcc101;
+}
+.registration-form input,
+.registration-form select {
+    border: none;
+    border-radius: 5px;
+    width: 325px;
+    height: 40px;
+}
+.registration-form input[type="password"] {
+    margin-bottom: 5px;
+}
+
+
+.registration-form label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+
+.register-password,
+.registration-form label:not(.register-name):not(.register-email) {
+    margin-top: 19px;
+}
+
+.registration-form {
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+.register-title {
+    margin-top: 0;
+
+}
+
+.register-button {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.16356;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    bottom: 25px;
+    left: 740px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+}

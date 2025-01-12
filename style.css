@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'TOYZ';
+    src: url('../fonts/TOYZ.otf') format('opentype');
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/selection.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding: 188px 0;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.singup-start-list {
+    margin-top: 40px;
+    margin-right: 1000px ;
+}
+
+.singup-list {
+    margin-bottom: 15px;
+}
+
+.sing-up {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 15px;
+    width: 350px;
+    height: 65px;
+    background: #ffc300;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.register-hero {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+    border-radius: 15px;
+    width: 350px;
+    height: 65px;
+}
+
+.sing-up:hover,
+.register-hero:hover,
+.sing-up:focus,
+.register-hero:focus {
+    transform: scale(1.1);
+}
+
+.hero-title {
+    font-family: "TOYZ", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f8be01;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 870px;
+}
+
+.lap {
+    font-family: "TOYZ", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f8be01;
+}
+
+.span-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: #f8be01
+}
+
+/* WHY SECTION */
+
+
+.why-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-top: 170px;
+    margin-bottom: 17px;
+}
+
+.why-lap {
+    font-family: "TOYZ", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #f8be01;
+}
+
+.why-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.why-lap-second {
+    font-family: "TOYZ", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #f8be01;
+}
+
+.why-text-second {
+    font-weight: 800;
+    font-size: 20px;
+    color: #f8be01;
+}
+
+.why-lead-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 76px;
+    margin-bottom: 172px;
+}
+
+.why-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.why-img {
+    margin-bottom: 15px;
+    max-width: 150px;
+    height: auto;
+}
+
+.why-whom {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 1.29153;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 12px;
+    max-width: 300px;
+}
+
+.why-whom-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.29153;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    max-width: 300px;
+}
+
+/* OFFERS CONTAINER */
+
+.offers-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.offers-lead-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.offers-list {
+    display: flex;
+    border-radius: 10px;
+    width: 1000px;
+    height: 130px;
+    background: rgba(52, 51, 51, 0.5);
+    border: 2px solid rgba(52, 51, 51, 0.7);
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.offers-img {
+    max-width: 110px;
+    margin-left: 73px;
+}
+
+.offer-list-csc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 62px;
+}
+
+.offers-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.offers-inf {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+/* START CONTAINER */
+
+.start-title {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.16356;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 200px;
+}
+
+.start-lead-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-left: 425px;
+}
+
+.start-lap {
+    font-family: "TOYZ", sans-serif;
+    font-size: 70px;
+    color: #fdc101;
+}
+
+
+.start-reg {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #ffc330;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 350px;
+    height: 65px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.start-go {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+    border-radius: 15px;
+    width: 350px;
+    height: 65px;
+}
+
+.start-reg:hover,
+.start-go:hover,
+.start-reg:focus,
+.start-go:focus {
+    transform: scale(1.1);
+}

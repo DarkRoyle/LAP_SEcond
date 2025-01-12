@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/singup.css" />
+    <script type="module" src="./singup.js" defer></script>
+  </head>
+  <body>
+    <section class="register-section">
+      <div class="container">
+        <a class="exit-img" href="./index.html">
+          <img src="./img/exit.png" alt="exit" />
+        </a>
+        <div class="register-div">
+          <form class="registration-form" id="registrationForm">
+            <h2 class="register-title">Реєстрація</h2>
+            <img class="register-line" src="./img/line.png" alt="line" />
+            <label class="register-name" for="name">Ім'я</label>
+            <input
+              class="register-input-name"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+
+            <div class="row">
+              <div>
+                <label for="age">Вік</label>
+                <input
+                  class="register-input-number"
+                  type="number"
+                  id="age"
+                  name="age"
+                  min="1"
+                  required
+                />
+              </div>
+              <div>
+                <label for="class">Клас</label>
+                <select
+                  class="register-input-class"
+                  id="class"
+                  name="class"
+                  required
+                >
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+            </div>
+
+            <label class="register-email" for="email" id="email">Email</label>
+            <input
+              class="register-input-email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+
+            <label class="register-password" for="password" id="password"
+              >Пароль</label
+            >
+            <input
+              class="register-input-pass"
+              type="password"
+              id="password"
+              name="password"
+              minlength="6"
+              required
+            />
+            <p class="password-requirements">
+              *Мінімум 6 символів, цифру, велику та малу літери
+            </p>
+          </form>
+          <button
+            type="submit"
+            class="register-button"
+            id="submit"
+            form="registrationForm"
+          >
+            Старт
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
