@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./AssigmentP2-style.css" />
+    <title>Document</title>
+  </head>
+  <body class="TT">
+    <div class="background_mainP3">
+        <div class="container-2">
+          <div></div> <!-- Це порожній елемент, можливо, він не потрібен -->
+        <div class="grid-container">  
+            <div class="sectionMain">
+                <div class="section2">
+                    <img src="Star.png" class="Star_image-1">
+                </div>
+                <div class="section3">
+                    <img src="Crystal.png" class="Crystal_image">
+                </div>
+                <div class="section4">
+                    <img src="Energy.png" class="Energy_image">
+                </div>
+                <div class="section5">
+                    <img src="Heart.png" class="Heart_image">
+                </div>
+                <div class="section6">
+                    <img src="Emoji.png" class="Emoji_image">
+                </div>
+            </div>
+            <div class="bottomSection">
+                <img src="Займенник — це самостійна частина мови, яка вказує на предмет, його ознаку або кількість, але не називає їх..png" class="Zai2 hhh2">
+            <div class="sectionAns">
+                <div class="block_1">
+                    <div class="rectangle-113">
+                        <div class="Text"><img src="Яке питання НЕ відповідає займенник_.png"></div>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="1">
+                                A) Хто?
+                              </label>
+                            </div>
+                            <div class="radio-option">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="2">
+                                Б) Який?
+                              </label>
+                            </div>
+                            <div class="radio-option">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="3">
+                                В) Що робити?
+                              </label>
+                            </div>
+                            <div class="radio-option">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="4">
+                                Г) Чий?
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <a href="" class="" class="hr" id="scrollLink">
+                    <img src="Group 58(1).png" class="arrow-12">
+                  </a>
+                <div class="block_2">
+                    <div class="rectangle-113">
+                        <div class="Text-1"><img src="У тексті займенники вживаються, щоб_.png"></div>
+                        <div class="radio-group-2">
+                            <div class="radio-option2">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="1">
+                                А) Збільшити кількість речень
+                              </label>
+                            </div>
+                            <div class="radio-option2">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="2">
+                                Б) Замінити слова та уникнути повторів
+                              </label>
+                            </div>
+                            <div class="radio-option2">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="3">
+                                В) Вказати на місце дії
+                              </label>
+                            </div>
+                            <div class="radio-option2">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="4">
+                                Г) Підкреслити важливість слова
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <a href="" class="" class="hr" id="scrollLink2">
+                      <img src="Group 58(1).png" class="arrow-12">
+                    </a>
+                <div class="block_3">
+                    <div class="rectangle-113">
+                        <div class="Text-2"><img src="Яке речення містить займенник_.png"></div>
+                        <div class="radio-group-2">
+                            <div class="radio-option2">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="1">
+                                А) Книга лежить на столі.
+                              </label>
+                            </div>
+                            <div class="radio-option2">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="2">
+                                Б) Вона читає книгу.
+                              </label>
+                            </div>
+                            <div class="radio-option2">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="3">
+                                В) Цікава книга на полиці.
+                              </label>
+                            </div>
+                            <div class="radio-option2">
+                              <label class="radio-label">
+                                <input type="radio" name="option" value="4">
+                                Г) Дитина читає нову книгу.
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <a href="" class="BT">
+                      <button class="But1"><div class="txt">ЗАВЕРШИТИ ТЕСТ</div></button>
+                    </a>
+            </div>
+        </div>
+        <div></div>
+          </div>
+      </div>    
+    </div>
+    <script> 
+        // Отримуємо всі радіокнопки
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+    
+    // Додаємо обробник подій для кожної радіокнопки
+    radioButtons.forEach((radio) => {
+      radio.addEventListener('change', (event) => {
+        // Змінюємо фон для всіх радіокнопок на стандартний
+        radioButtons.forEach((r) => {
+          const label = r.parentElement;
+          label.style.background = 'rgba(255, 255, 255, 0.59)'; // Стандартний фон
+        });
+    
+        // Змінюємо фон для вибраної радіокнопки
+        const selectedLabel = event.target.parentElement;
+        selectedLabel.style.background = 'rgba(76, 175, 80, 0.59)'; // Новий фон
+      });
+    });
+    document.getElementById("scrollLink").addEventListener("click", function(event) {
+    event.preventDefault(); // запобігаємо стандартному переходу за посиланням
+
+    window.scrollBy({
+        top: 1000, // кількість пікселів для прокручування вниз
+        behavior: "smooth" // плавне прокручування
+    });
+});
+document.getElementById("scrollLink2").addEventListener("click", function(event) {
+    event.preventDefault(); // запобігаємо стандартному переходу за посиланням
+
+    window.scrollTo({
+        top: document.body.scrollHeight, // прокручуємо до кінця сторінки
+        behavior: "smooth" // плавне прокручування
+    });
+});
+    
+    </script>
+  </body>
+</html>

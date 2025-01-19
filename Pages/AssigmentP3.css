@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100vh;
+    background-image: url("Group\ 57(1).png");
+    background-size: cover;
+    background-position: center;
+  }
+  .sectionMain {
+    display: flex;
+    justify-content: center;
+  
+    padding: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: 1fr 7fr; /* Верхня частина буде меншою */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container .sectionMain {
+    display: flex;
+    justify-content: flex-start; /* Вирівнювання елементів по лівому краю */
+    align-items: left; /* Центрує елементи по вертикалі */
+    padding: 20px;
+  }
+  
+  
+  
+  
+  .container .bottomSection {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 20px;
+  }
+  
+  .Star_image-1 {
+    width: 100px; /* Збільшена ширина для зображення */
+    height: 100px; /* Збільшена висота для зображення */
+    margin-left: -50px; /* Вирівнювання по лівому краю */
+    margin-top: -30px;
+    position: relative; 
+  }
+  
+  .Crystal_image {
+    width: 70px; /* Збільшена ширина для зображення */
+    height: 90px; /* Збільшена висота для зображення */
+    margin-top: -30px;
+    margin-left: -40px;
+    position: relative;
+  }
+  
+  .Energy_image {
+    width: 150px;
+    height: 120px;
+    margin-left: 0; /* Вирівнювання по лівому краю */
+    position: relative;
+    margin-top: -40px;
+    margin-left: -60px;
+  }
+  
+  .Heart_image {
+    width: 100px; /* Збільшена ширина для зображення */
+    height: 100px; /* Збільшена висота для зображення */
+    margin-top: -25px; /* Вирівнювання по лівому краю */
+    margin-left: -30px;
+    position: relative;
+  }
+  
+  .Emoji_image {
+    width: 95px;
+    height: 80px;
+    margin-top: -20px; /* Вирівнювання по лівому краю */
+    margin-left: -40px;
+  }
+  
+  .section2, .section3, .section4, .section5, .section6 {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 196px;
+    height: 35px;
+    padding-left: 20px;
+  }
+  
+  .sectionMain {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 40px;
+    position:absolute;
+    display: flex;
+    flex-direction: rows;
+  }
+  
+  .bottomSection {
+  }
+  

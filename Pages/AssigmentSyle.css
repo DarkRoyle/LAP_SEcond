@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100vh;
+    background-image: url("Group\ 56.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    margin: auto; /* Центрує блок у контейнері */
+
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .grid-item {
+    display: flex;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .image-109,
+.image-109 * {
+  box-sizing: border-box;
+}
+.image-109 {
+  width: 150px;
+  height: 120px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(-3.673deg) scale(1, 1);
+  object-fit: cover;
+  margin-top: 20px;
+}
+.image-110,
+.image-110 * {
+  box-sizing: border-box;
+}
+.image-110 {
+    width: 174.4px;
+    height: 178.4px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-3.673deg) scale(1, 1);
+  object-fit: cover;
+  margin-left: 70px;
+  margin-top: 40px
+}
+.image-111,
+.image-111 * {
+  box-sizing: border-box;
+}
+.image-111 {
+    width: 167.2px;
+    height: 152px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-3.673deg) scale(1, 1);
+  object-fit: cover;
+  margin-left: 170px;
+  margin-top: 100px;
+}
+.image-112,
+.image-112 * {
+  box-sizing: border-box;
+}
+.image-112 {
+  border-radius: 10px;
+  width: 217.6px;
+  height: 217.6px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-3.673deg) scale(1, 1);
+  object-fit: cover;
+  margin-left:110px;
+  margin-top: 120px;
+}
+.image-113,
+.image-113 * {
+  box-sizing: border-box;
+}
+.image-113 {
+    width: 180.8px;
+    height: 171.2px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(-3.673deg) scale(1, 1);
+  object-fit: cover;
+  margin-left: 25px;
+}
+.image-115,
+.image-115 * {
+  box-sizing: border-box;
+}
+.image-115 {
+    width: 208.8px;
+    height: 208.8px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-3.673deg) scale(1, 1);
+  object-fit: cover;
+  margin-top: 30px;
+  margin-left: 180px;
+}
+.image-114,
+.image-114 * {
+  box-sizing: border-box;
+}
+.image-114 {
+    width: 143.2px;
+    height: 112px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-3.673deg) scale(1, 1);
+  object-fit: cover;
+  margin-left: 180px;
+  margin-top: 0px ;
+}
+.image-1,
+.image-1 * {
+  box-sizing: border-box;
+}
+.image-1 {
+    width: 167.2px;
+    height: 150.4px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-3.673deg) scale(1, 1);
+  object-fit: cover;
+  margin-left:100px;
+  margin-top: 110px;
+}
+.group-54,
+.group-54 * {
+  box-sizing: border-box;
+}
+.group-54 {
+  height: auto;
+  position: absolute;
+  overflow: visible;
+  transform: scale(0.9); 
+      transform-origin: center; 
+}
+.image-109:hover,
+.image-110:hover,
+.image-111:hover,
+.image-112:hover,
+.image-113:hover,
+.image-114:hover,
+.image-115:hover,
+.image-1:hover {
+  transform: rotate(-3.673deg) scale(1.1); /* Збільшення на 10% */
+}
+
+.image-109,
+.image-110,
+.image-111,
+.image-112,
+.image-113,
+.image-114,
+.image-115,
+.image-1 {
+  transition: transform 0.3s ease; /* Плавна анімація збільшення */
+}

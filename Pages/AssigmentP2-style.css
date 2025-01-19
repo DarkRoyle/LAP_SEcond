@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-image: url("Group\ 57(1).png");
+      background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.sectionMain {
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 7fr; /* Верхня частина буде меншою */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .sectionMain {
+  display: flex;
+  justify-content: flex-start; /* Вирівнювання елементів по лівому краю */
+  align-items: left; /* Центрує елементи по вертикалі */
+  padding: 20px;
+}
+
+
+.container .bottomSection {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+}
+
+.Star_image-1 {
+  width: 100px; /* Збільшена ширина для зображення */
+  height: 100px; /* Збільшена висота для зображення */
+  margin-left: -50px; /* Вирівнювання по лівому краю */
+  margin-top: -30px;
+  position: relative; 
+}
+
+.Crystal_image {
+  width: 70px; /* Збільшена ширина для зображення */
+  height: 90px; /* Збільшена висота для зображення */
+  margin-top: -30px;
+  margin-left: -40px;
+  position: relative;
+}
+
+.Energy_image {
+  width: 150px;
+  height: 120px;
+  margin-left: 0; /* Вирівнювання по лівому краю */
+  position: relative;
+  margin-top: -40px;
+  margin-left: -60px;
+}
+
+.Heart_image {
+  width: 100px; /* Збільшена ширина для зображення */
+  height: 100px; /* Збільшена висота для зображення */
+  margin-top: -25px; /* Вирівнювання по лівому краю */
+  margin-left: -30px;
+  position: relative;
+}
+
+.Emoji_image {
+  width: 95px;
+  height: 80px;
+  margin-top: -20px; /* Вирівнювання по лівому краю */
+  margin-left: -40px;
+}
+
+.section2, .section3, .section4, .section5, .section6 {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 196px;
+  height: 35px;
+  padding-left: 20px;
+}
+
+.sectionMain {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 40px;
+  position:absolute;
+  display: flex;
+  flex-direction: rows;
+}
+
+.Zai {
+  margin-left: 30%;
+  padding-bottom: 30px;
+}
+
+.Zai2 {
+  padding-bottom: 27px;
+}
+
+.Zai3 {
+  margin-left: 40px;
+  padding-bottom: 20px;
+}
+
+.Zai4 {
+  margin-left: 110px;
+  padding-bottom: 25px;
+}
+
+.Zai5 {
+  margin-left: 40%;
+  margin-bottom: 14px;
+}
+
+.Zai6 {
+  margin-left: 110px;
+  padding-bottom: 25px;
+}
+
+.But1 {
+  background: #ffc300;
+  border-radius: 15px;
+  width: 324px;
+  height: 54px;
+  margin-left: 35%;
+  justify-content: center;
+  border-color: #ffc300;
+}
+
+.txt {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  top: 12px;
+  margin-left: 25px;
+}
+
+.hhh2{
+  visibility: hidden;
+}
+.rectangle-113,
+.rectangle-113 * {
+  box-sizing: border-box;
+}
+.rectangle-113 {
+  background: rgba(0, 0, 0, 0.36);
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+    105.91deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(255, 255, 255, 1) 32.69095718860626%,
+    rgba(62, 59, 59, 1) 69.14994716644287%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-image-slice: 1;
+  height: 392px;
+  position: relative;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+}
+.radio-group {
+  display: flex;
+  flex-direction: column; /* Розташування елементів вертикально */
+  gap: 10px; /* Відстань між елементами */
+}
+
+.radio-label {
+  font-size: 18px;
+}
+
+input[type="radio"] {
+  margin-right: 10px; /* Відстань між радіокнопкою та текстом */
+}
+.radio-group {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Верхня частина буде меншою */
+  grid-template-columns: 1fr 1fr;
+  justify-content: center; /* Розподіляє елементи по рядках */
+  gap: 80px; /* Відстань між радіокнопками */
+  margin-left: 15%;
+  
+}
+
+.radio-option {
+  display: flex;
+  flex: 0 0 45%; /* Кожен елемент займає 45% ширини */
+}
+
+.Text{
+  padding: 44px;
+  margin-left: 8%;
+}
+.radio-label {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.59);
+  border-radius: 15px;
+  width: auto;
+  height: 66px;
+  position: relative;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.radio-label input[type="radio"] {
+  display: none; /* Приховуємо стандартний елемент радіокнопки */
+}
+.SectionAns {
+  display: flex;
+  flex-direction: column; /* Розташовує елементи вертикально */
+  align-items: center; /* Вирівнює елементи по центру горизонтально */
+  gap: 20px; /* Відстань між елементами */
+  margin-top: 30px;
+}
+.block_1{
+  margin-top: 100px;
+  padding-bottom: 51px;
+}
+.block_2{
+  padding-bottom: 51px;
+  padding-top: 400px;
+}
+.radio-group-2{
+  margin-left: 130px;
+}
+.Text-1{
+  margin-left: 110px;
+  margin-top: 32px;
+}
+.radio-option2{
+  padding-bottom: 10px;
+  display: flex;
+  flex: 0 0 45%; /* Кожен елемент займає 45% ширини */
+}
+.Text-2{
+  margin-left: 172px;
+  margin-top: 32px;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.container-2 .sectionMain {
+  display: flex;
+  justify-content: flex-start; /* Вирівнювання елементів по лівому краю */
+  align-items: left; /* Центрує елементи по вертикалі */
+  padding: 20px;
+}
+
+
+.container-2 .bottomSection {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+}
+.block_3{
+  padding-bottom: 174px ;
+  padding-top: 400px;
+}
+.BT{
+  padding-bottom: 174px;
+}
+.TT {
+  background-image: url('image 131(1).png'), url('image 131(2).png'), url('image 131.png');
+  background-size: cover; /* Зображення будуть зберігати пропорції */
+  background-repeat: no-repeat;
+  background-position: top center, center center, bottom center; /* Розташування картинок */
+  background-attachment: fixed; /* Фон буде фіксований при прокручуванні */
+  position: relative; /* Забезпечує, щоб фон не перекривав інші елементи */
+  z-index: -1; /* Переконуємося, що фон буде за іншими елементами */
+}
+.arrow-12{
+  position: relative;
+  margin-left: 40%;
+}
+.hr{
+  margin-top: -40px;
+}
