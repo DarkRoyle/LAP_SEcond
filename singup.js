@@ -1,61 +1,66 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+// Імпортуємо необхідні функції з Firebase SDK
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyAqYtVukf2hJceCB2URk110KMubrgq7yg8",
-    authDomain: "lapku02.firebaseapp.com",
-    projectId: "lapku02",
-    storageBucket: "lapku02.firebasestorage.app",
-    messagingSenderId: "543345322504",
-    appId: "1:543345322504:web:100d41a9610119fd5d7fbd"
-  };
+// Ваш Firebase конфігураційний об'єкт
+const firebaseConfig = {
+  apiKey: "AIzaSyAqYtVukf2hJceCB2URk110KMubrgq7yg8",
+  authDomain: "lapku02.firebaseapp.com",
+  projectId: "lapku02",
+  storageBucket: "lapku02.firebasestorage.app",
+  messagingSenderId: "543345322504",
+  appId: "1:543345322504:web:100d41a9610119fd5d7fbd"
+};
 
-
+// Ініціалізація Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const registrationForm = document.getElementById("registrationForm");
-const nameInput = document.getElementById("name");
-const ageInput = document.getElementById("age");
-const classInput = document.getElementById("class");
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
-const submitButton = document.getElementById("submit");
 
-// Додайте обробник для кнопки реєстрації
-submitButton.addEventListener("click", async (event) => {
-  event.preventDefault(); // Зупиняємо стандартну поведінку форми
+// Функція для показу повідомлень на сторінці
+function showMessage(message, divId) {
+  var messageDiv = document.getElementById(divId);
+  messageDiv.style.display = "block";
+  messageDiv.innerHTML = message;
+  messageDiv.style.opacity = 1;
+  setTimeout(function () {
+    messageDiv.style.opacity = 0;
+  }, 5000);
+}
 
-  // Очищаємо пробіли навколо введених значень
-  const name = nameInput.value.trim();
-  const age = ageInput.value.trim();
-  const classValue = classInput.value.trim();
-  const email = emailInput.value.trim();
-  const password = passwordInput.value.trim();
+// Обробка натискання кнопки реєстрації
+const signUpButton = document.getElementById("highlightButton");
+signUpButton.addEventListener("click", (event) => {
+  event.preventDefault();
 
-  // Логування значень, щоб побачити, що ми отримуємо
-  console.log("Name:", name);
-  console.log("Age:", age);
-  console.log("Class:", classValue);
-  console.log("Email:", email);
-  console.log("Password:", password);
+  // Отримання введених значень електронної пошти та паролю
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-  // Перевіряємо, чи всі поля заповнені
-  if (!name || !age || !classValue || !email || !password) {
-    alert("Будь ласка, заповніть усі поля!");
-    return;
-  }
+  const auth = getAuth();
 
-  try {
-    // Реєстрація користувача у Firebase Authentication
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    const user = userCredential.user;
+  // Виконання реєстрації користувача
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      showMessage("Реєстрація успішна!", "signInMessage");
 
-    // Логіка після успішної реєстрації
-    console.log("Користувач створений:", user);
-    alert(`Реєстрація успішна! Вітаємо, ${name}!`);
-  } catch (error) {
-    // Обробка помилок
-    console.error("Помилка реєстрації:", error.message);
-    alert(`Помилка: ${error.message}`);
-  }
+      // Збереження ID користувача в localStorage
+      localStorage.setItem("loggedInUserId", user.uid);
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      if (errorCode === "auth/email-already-in-use") {
+        showMessage("Цей email вже використовується!", "signInMessage");
+      } else {
+        showMessage("Сталася помилка при реєстрації!", "signInMessage");
+      }
+    });
+});
+// Отримуємо елемент кнопки за її ID
+const redirectButton = document.getElementById("highlightButton");
+
+// Додаємо обробник події на клік
+redirectButton.addEventListener("click", function() {
+  // Переходимо на іншу сторінку
+  window.location.href = "./Pages/page1.html"; // Заміни "./index.html" на потрібний шлях
 });
